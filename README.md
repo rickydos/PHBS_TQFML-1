@@ -27,7 +27,7 @@ nose_tip_x | x-coordinate of the central point in the nose tip
 nose_tip_y | y-coordinate of the central point in the nose tip
 
 ## Data soures
-We use the dataset from [Kaggle](https://www.kaggle.com/c/facial-keypoint-detection/data).
+We find the dataset from [Kaggle](https://www.kaggle.com/c/facial-keypoint-detection/data) and use the training dataset to build our model.
 
 ## Methods
 Step1: Building good training sets and data preprocessing.                                      
