@@ -1,8 +1,9 @@
 # PHBS_TQFML/Facial Keypoints Detection
-王迪雅 Wang Diya 1701213099 <br>
-王锦烽 Wang Jinfeng 1701213103 <br>
-颜鹏 Yan Peng 1701213130 <br>
-朱存正 Zhu Cunzheng 1701213170 <br>
+## Team Members
+王迪雅  Wang Diya  1701213099 <br>
+王锦烽  Wang Jinfeng  1701213103 <br>
+颜鹏  Yan Peng  1701213130 <br>
+朱存正  Zhu Cunzheng  1701213170 <br>
 ## Project Description
 Detecting facial keypoints is a very challenging problem. Facial features vary greatly from one individual to another, and even for a single individual, there is a large amount of variation due to 3D pose, size, position, viewing angle, and illumination conditions. Computer vision research has come a long way in addressing these difficulties, but there remain many opportunities for improvement. In this project, we are trying to predict keypoint positions on face images. <br>
 See the [Proposal]
