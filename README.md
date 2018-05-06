@@ -6,7 +6,6 @@
 朱存正  Zhu Cunzheng  1701213170 <br>
 ## Project Description
 Detecting facial keypoints is a very challenging problem. Facial features vary greatly from one individual to another, and even for a single individual, there is a large amount of variation due to 3D pose, size, position, viewing angle, and illumination conditions. Computer vision research has come a long way in addressing these difficulties, but there remain many opportunities for improvement. In this project, we are trying to predict keypoint positions on face images. <br>
-See the [Proposal]
 ## Features
 The original data is the all image pixel data. We use the original 96 X 96 dataset to build up 11 features. Each feature is specified by an (x, y) real-valued pair in the space of pixel indices.
 
