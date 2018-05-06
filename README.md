@@ -7,7 +7,7 @@
 Detecting facial keypoints is a very challenging problem. Facial features vary greatly from one individual to another, and even for a single individual, there is a large amount of variation due to 3D pose, size, position, viewing angle, and illumination conditions. Computer vision research has come a long way in addressing these difficulties, but there remain many opportunities for improvement. In this project, we are trying to predict keypoint positions on face images. <br>
 See the [Proposal]
 ## Features
-Each predicted keypoint is specified by an (x, y) real-valued pair in the space of pixel indices. There are 15 keypoints, which represent the following elements of the face:
+The original data is the all image pixel data. We use the original 96 X 96 dataset to predict the keypoints. Each predicted keypoint is specified by an (x, y) real-valued pair in the space of pixel indices. There are 7 keypoints, which represent the following elements of the face:
 
 Features | Description
 -------------------|------------------------
@@ -26,10 +26,10 @@ right_eye_outer_corner_y | y-coordinate of the rightmost point in the right eye
 nose_tip_x | x-coordinate of the central point in the nose tip 
 nose_tip_y | y-coordinate of the central point in the nose tip
 
-## Data soures
+## Data sources
 We find the dataset from [Kaggle](https://www.kaggle.com/c/facial-keypoint-detection/data) and use the training dataset to build our model.
 
-## Methods
+## Methods/ Goal
 Step1: Building good training sets and data preprocessing.                                      
 Step2: Dimensionality reduction to figure out the best features.<br> 
 Step3: Using Preceptron/Logistic Regression/(Kernel) SVM/Decision Tree/Random Forest/KNN/Majority Voting to predict the competitiveness of a bank.<br> 
