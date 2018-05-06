@@ -71,10 +71,10 @@ nose_tip_x | x-coordinate of the central point in the nose tip
 nose_tip_y | y-coordinate of the central point in the nose tip
 
 ### Step4: Obtaining our results and prediction.<br> 
-According to mean standard error, it is better to use Random Forest to predict the central points of both eyes.
+We will fix the problem of overfitting. Also, we will figure out which model is better to predict the central points of both eyes through mean standard error.
 
-
-
+## Conclusion
+In this regression analysis, we find that Random Forest is a better model to predict the keypoints of both eyes and its fitting value is higher.
 
 
 
