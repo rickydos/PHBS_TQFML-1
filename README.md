@@ -70,8 +70,8 @@ right_eye_outer_corner_y | y-coordinate of the rightmost point in the right eye
 nose_tip_x | x-coordinate of the central point in the nose tip 
 nose_tip_y | y-coordinate of the central point in the nose tip
 
-### Step4: Obtaining our results and the accuracy of our prediction.<br> 
-
+### Step4: Obtaining our results and prediction.<br> 
+According to mean standard error, it is better to use Random Forest to predict the central points of both eyes.
 
 
 
