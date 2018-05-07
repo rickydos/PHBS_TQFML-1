@@ -40,7 +40,7 @@ We find the dataset from [Kaggle](https://www.kaggle.com/c/facial-keypoint-detec
 
 ## Methods
 ### Step1: Building good training sets and data preprocessing.<br>
-（1）In all image pixel data, only the top 20% of the darkest point is retained. The remaining points are all turned to pure white.<br>
+（1）In all image pixel data, only the top 15% of the darkest point is retained. The remaining points are all turned to pure white.<br>
 （2）Set the border to remove noise, leave only the features of the five facial features, and turn all the other points into pure white.<br>
 （3）The image is divided into four parts along the midpoints of each side. Right upper part is used to analyze left eye and left upper part is used to analyze right eye.<br>
 ### Step2: Features extraction.<br> 
