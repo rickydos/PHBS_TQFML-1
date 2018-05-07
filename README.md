@@ -4,7 +4,7 @@
 王锦烽  Wang Jinfeng  1701213103 <br>
 颜鹏  Yan Peng  1701213130 <br>
 朱存正  Zhu Cunzheng  1701213170 <br>
-## Project Description
+## Project Description/ Goal
 Detecting facial keypoints is a very challenging problem. Facial features vary greatly from one individual to another, and even for a single individual, there is a large amount of variation due to 3D pose, size, position, viewing angle, and illumination conditions. Computer vision research has come a long way in addressing these difficulties, but there remain many opportunities for improvement. In this project, we are trying to predict keypoint positions on face images. <br>
 ## Features
 The original data is the all image pixel data. We use the original 96 X 96 dataset to build up 11 features. Each feature is specified by an (x, y) real-valued pair in the space of pixel indices.
@@ -38,7 +38,7 @@ Med.y.R	|Median y-coordinate of all nonwhite points in the right eye area
 We find the dataset from [Kaggle](https://www.kaggle.com/c/facial-keypoint-detection/data) and use the image information of training dataset to build our model.
 
 
-## Methods/ Goal
+## Methods
 ### Step1: Building good training sets and data preprocessing.<br>
 •In all image pixel data, only the top 20% of the darkest point is retained. The remaining points are all turned to pure white.<br>
 •Set the border to remove noise, leave only the features of the five facial features, and turn all the other points into pure white.<br>
