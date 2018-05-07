@@ -88,4 +88,5 @@ right_eye_center_x | 3.103 | 0.303
 right_eye_center_y | 2.464 | 0.524
 
 ![Image text](https://raw.githubusercontent.com/diyawang/PHBS_TQFML/master/Project/sample_results.png)
+<br>
 The write points are the ture location. The red ones are the prediction of Decision Tree, while the blue ones are the prediction of Random Forest.
