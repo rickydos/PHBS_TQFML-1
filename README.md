@@ -51,7 +51,7 @@ First, we will focus on the area with only eye.<br>
 （4）Calculate the median of the horizontal and vertical coordinates of all non-white points in the area for the left and right eyes.<br>
 Ultimately, we obtained the ordinates of the four boundary points of the eyes in the two regions, the median of the coordinate of the non-white dots and sum of all non-white points, which contains 22 features in total.<br>
 ### Step3: Using Decision Tree/Random Forest to predict facial keypoints.<br> 
-Each predicted keypoint is specified by an (x, y) real-valued pair in the space of pixel indices. There are 7 keypoints, which represent the following elements of the face:
+Each predicted keypoint is specified by an (x, y) real-valued pair in the space of pixel indices. There are 2 keypoints, which represent the following elements of the face:
 
 Prediction | Description
 -------------------|------------------------
@@ -59,16 +59,7 @@ left_eye_center_x | x-coordinate of the central point in the left eye
 left_eye_center_y | y-coordinate of the central point in the left eye
 right_eye_center_x | x-coordinate of the central point in the right eye
 right_eye_center_y | x-coordinate of the central point in the right eye
-left_eye_inner_corner_x | x-coordinate of the rightmost point in the left eye
-left_eye_inner_corner_y | y-coordinate of the rightmost point in the left eye
-left_eye_outer_corner_x | x-coordinate of the leftmost point in the left eye
-left_eye_outer_corner_y | y-coordinate of the leftmost point in the left eye
-right_eye_inner_corner_x | x-coordinate of the leftmost point in the right eye
-right_eye_inner_corner_y | y-coordinate of the leftmost point in the right eye
-right_eye_outer_corner_x | x-coordinate of the rightmost point in the right eye
-right_eye_outer_corner_y | y-coordinate of the rightmost point in the right eye
-nose_tip_x | x-coordinate of the central point in the nose tip 
-nose_tip_y | y-coordinate of the central point in the nose tip
+
 
 ### Step4: Obtaining our results and prediction.<br> 
 We will fix the problem of overfitting. Also, we will figure out which model is better to predict the central points of both eyes through mean standard error.
