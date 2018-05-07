@@ -65,7 +65,7 @@ right_eye_center_y | x-coordinate of the central point in the right eye
 We will fix the problem of overfitting. Also, we will figure out which model is better to predict the central points of both eyes through mean standard error.
 
 ## Conclusion
-In this regression analysis, we find that Random Forest is a better model to predict the keypoints of both eyes through mean standard error and its fitting value is higher. 
+In this regression analysis, we find that Random Forest is a better model to predict the keypoints of both eyes through mean standard error and its fitting value is higher. <br>
 The results of Decision Tree:<br>
 
 Prediction | MSE | R-square
