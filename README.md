@@ -41,6 +41,8 @@ We find the dataset from [Kaggle](https://www.kaggle.com/c/facial-keypoint-detec
 ## Methods
 ### Step1: Building good training sets and [data preprocessing](https://github.com/diyawang/PHBS_TQFML/blob/master/Project/Data_preprocessing.ipynb).<br>
 （1）In all image pixel data, only the top 15% of the darkest point is retained. The remaining points are all turned to pure white.<br>
+![Image text](https://raw.githubusercontent.com/diyawang/PHBS_TQFML/master/Project/data_new2.png)
+<br>
 （2）Set the border to remove noise, leave only the features of the five facial features, and turn all the other points into pure white.<br>
 ![Image text](https://raw.githubusercontent.com/diyawang/PHBS_TQFML/55a2633520117aa37f840e7861a1444a2a81fc85/Project/data1.png)
 <br>
