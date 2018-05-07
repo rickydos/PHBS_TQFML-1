@@ -35,7 +35,7 @@ Med.y.L	|Median y-coordinate of all nonwhite points in the left eye area
 Med.y.R	|Median y-coordinate of all nonwhite points in the right eye area
 
 ## Data sources
-We find the dataset from [Kaggle](https://www.kaggle.com/c/facial-keypoint-detection/data) and use the image information of training dataset to build our model.
+We find the dataset from [Kaggle](https://www.kaggle.com/c/facial-keypoint-detection/data) and use the image information of training dataset to build our model. （The dataset is so large that we just upload the compressed file.)
 
 
 ## Methods
