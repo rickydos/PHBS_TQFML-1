@@ -66,8 +66,21 @@ We will fix the problem of overfitting. Also, we will figure out which model is 
 
 ## Conclusion
 In this regression analysis, we find that Random Forest is a better model to predict the keypoints of both eyes through mean standard error and its fitting value is higher. 
+The results of Decision Tree:<br>
 
+Prediction | MSE | R-square
+--------|------|-----
+left_eye_center_x | 4.131 | 0.061
+left_eye_center_y | 3.050 | 0.423
+right_eye_center_x | 3.729 | 0.162
+right_eye_center_y | 3.200 | 0.382
 
+The results of Random Forest:<br>
 
-
+Prediction | MSE | R-square
+--------|------|-----
+left_eye_center_x | 3.027 | 0.312
+left_eye_center_y | 1.977 | 0.626
+right_eye_center_x | 3.103 | 0.303
+right_eye_center_y | 2.464 | 0.524
 
