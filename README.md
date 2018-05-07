@@ -39,7 +39,7 @@ We find the dataset from [Kaggle](https://www.kaggle.com/c/facial-keypoint-detec
 
 
 ## Methods
-### Step1: Building good training sets and data preprocessing.<br>
+### Step1: Building good training sets and [data preprocessing](https://github.com/diyawang/PHBS_TQFML/blob/master/Project/Data_preprocessing.ipynb).<br>
 （1）In all image pixel data, only the top 15% of the darkest point is retained. The remaining points are all turned to pure white.<br>
 （2）Set the border to remove noise, leave only the features of the five facial features, and turn all the other points into pure white.<br>
 （3）The image is divided into four parts along the midpoints of each side. Right upper part is used to analyze left eye and left upper part is used to analyze right eye.<br>
@@ -50,7 +50,7 @@ First, we will focus on the area with only eye.<br>
 （3）Then extract the sum of the pixels of all black points in the area.<br>
 （4）Calculate the median of the horizontal and vertical coordinates of all non-white points in the area for the left and right eyes.<br>
 Ultimately, we obtained the ordinates of the four boundary points of the eyes in the two regions, the median of the coordinate of the non-white dots and sum of all non-white points, which contains 22 features in total.<br>
-### Step3: Using Decision Tree/Random Forest to predict facial keypoints.<br> 
+### Step3: Using [Decision Tree/Random Forest](https://github.com/diyawang/PHBS_TQFML/blob/master/Project/analysis.ipynb to predict facial keypoints).<br> 
 Each predicted keypoint is specified by an (x, y) real-valued pair in the space of pixel indices. There are 2 keypoints, which represent the following elements of the face:
 
 Prediction | Description
