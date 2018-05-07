@@ -40,15 +40,15 @@ We find the dataset from [Kaggle](https://www.kaggle.com/c/facial-keypoint-detec
 
 ## Methods
 ### Step1: Building good training sets and data preprocessing.<br>
-•In all image pixel data, only the top 20% of the darkest point is retained. The remaining points are all turned to pure white.<br>
-•Set the border to remove noise, leave only the features of the five facial features, and turn all the other points into pure white.<br>
-•The image is divided into four parts along the midpoints of each side. Right upper part is used to analyze left eye and left upper part is used to analyze right eye.<br>
+（1）In all image pixel data, only the top 20% of the darkest point is retained. The remaining points are all turned to pure white.<br>
+（2）Set the border to remove noise, leave only the features of the five facial features, and turn all the other points into pure white.<br>
+（3）The image is divided into four parts along the midpoints of each side. Right upper part is used to analyze left eye and left upper part is used to analyze right eye.<br>
 ### Step2: Features extraction.<br> 
 First, we will focus on the area with only eye.<br>
-•If the area has less than or equal to three black points, the coordinates of the uppermost, downmost, leftmost, and rightmost points are directly extracted.<br>
-•If the area has more than three black points, the coordinates of the fourth uppermost, downmost, leftmost, and rightmost points are extracted.<br>
-•Then extract the sum of the pixels of all black points in the area.<br>
-•Calculate the median of the horizontal and vertical coordinates of all non-white points in the area for the left and right eyes.<br>
+（1）If the area has less than or equal to three black points, the coordinates of the uppermost, downmost, leftmost, and rightmost points are directly extracted.<br>
+（2）If the area has more than three black points, the coordinates of the fourth uppermost, downmost, leftmost, and rightmost points are extracted.<br>
+（3）Then extract the sum of the pixels of all black points in the area.<br>
+（4）Calculate the median of the horizontal and vertical coordinates of all non-white points in the area for the left and right eyes.<br>
 Ultimately, we obtained the ordinates of the four boundary points of the eyes in the two regions, the median of the coordinate of the non-white dots and sum of all non-white points, which contains 22 features in total.<br>
 ### Step3: Using Decision Tree/Random Forest to predict facial keypoints.<br> 
 Each predicted keypoint is specified by an (x, y) real-valued pair in the space of pixel indices. There are 7 keypoints, which represent the following elements of the face:
